@@ -4,6 +4,10 @@
 :root {
   --primary-color: #0f1b4c;
 }
+html,
+body {
+  scroll-behavior: smooth;
+}
 
 html {
   font-size: 62.5%;
@@ -70,6 +74,7 @@ body {
   height: calc(100vh - 90px);
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .navbar {
@@ -110,15 +115,11 @@ body {
   border-radius: 8px;
 }
 
-.hero {
-  margin-top: 130px;
-}
-
-.hero .info {
+.hero-wrap .info {
   width: 50.4%;
 }
 
-.hero .sub-title {
+.hero-wrap .sub-title {
   color: #687690;
   font-size: 1.8rem;
   line-height: 1.5rem;
@@ -126,7 +127,7 @@ body {
   letter-spacing: 0.18px;
 }
 
-.hero .tittle {
+.hero-wrap .tittle {
   color: #000336;
   font-size: 6.2rem;
   font-weight: 700;
@@ -134,7 +135,7 @@ body {
   margin-top: 8px;
 }
 
-.hero .desc {
+.hero-wrap .desc {
   margin-top: 30px;
   color: #5a6473;
   font-size: 1.8rem;
@@ -142,12 +143,12 @@ body {
   line-height: 2;
 }
 
-.hero .hero-cta {
+.hero-wrap .hero-cta {
   margin-top: 40px;
   min-width: 170px;
 }
 
-.hero .hero-img {
+.hero-wrap .hero-img {
   position: absolute;
   right: calc((100vw - 1110px) / 2 - 100px);
   bottom: 0;
